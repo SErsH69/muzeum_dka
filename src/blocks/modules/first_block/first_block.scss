@@ -1,0 +1,83 @@
+.first_block {
+    padding-top: 65px;
+    padding-bottom: 50px;
+    @media all and (max-width: 1023px) {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    @media all and (max-width: 620px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__in {
+        border-radius: 20px;
+        background: #fff;
+        padding: 40px;
+        min-height: 308px;
+        background-repeat: no-repeat;
+        background-size: vw(710);
+        background-position: 100% 50%;
+        @media all and (max-width: 1023px) {
+            padding: 30px 20px;
+            background: none !important;
+        }
+        @media all and (max-width: 620px) {
+            padding: 25px 15px;
+        }
+    }
+    &__bread {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #333;
+        margin-bottom: 35px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 54px;
+        }
+        @media all and (max-width: 620px) {
+            margin-bottom: 47px;
+        }
+    }
+    &__title {
+        margin-bottom: 24px;
+        font-family: var(--third-family);
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 85%;
+        letter-spacing: -0.01em;
+        color: #333;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 18px;
+            font-size: 55px;
+        }
+        @media all and (max-width: 620px) {
+            margin-bottom: 12px;
+            font-size: 30px;
+        }
+    }
+    &__text {
+        max-width: 350px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #333;
+        width: 100%;
+        @media all and (max-width: 1023px) {
+            max-width: 100%;
+        }
+        @media all and (max-width: 620px) {
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+    }
+    &__img {
+        display: none;
+        font-size: 0;
+        @media all and (max-width: 1023px) {
+            display: block;
+            width: 100%;
+        }
+    }
+}

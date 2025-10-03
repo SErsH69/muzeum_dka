@@ -1,0 +1,178 @@
+.people_block {
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        max-width: 440px;
+        width: 100%;
+        margin-bottom: 25px;
+        svg {
+            flex: 0 0 37px;
+            padding-right: 8px;
+            border-right: 1px solid #333;
+            width: 37px;
+            height: 16px;
+        }
+        input[type="text"] {
+            padding-left: 11px;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #000;
+            width: 100%;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 120%;
+            letter-spacing: -0.01em;
+            &::placeholder {
+                color: #3333331a;
+            }
+        }
+        input[type="button"] {
+            background: #343432;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-family: var(--font3);
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 115%;
+            letter-spacing: -0.02em;
+            color: #fff;
+            border-radius: 5px;
+            padding: 9px 38px;
+            background: #d5b26a;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+                background: #4a4a48;
+            }
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-bottom: 110px;
+        position: relative;
+        @media all and (max-width: 1023px) {
+            padding-left: 40px;
+        }
+        @media all and (max-width: 620px) {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-bottom: 60px;
+        }
+    }
+    &__abc {
+        position: absolute;
+        left: -60px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media all and (max-width: 1023px) {
+            left: 0;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            left: 9px;
+            width: 1px;
+            height: 100%;
+            border-left: 1px dotted #969696;
+            @media all and (max-width: 620px) {
+                left: 8px;
+            }
+        }
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 97%;
+            text-align: center;
+            letter-spacing: -0.01em;
+            color: #969696;
+            padding: 2px;
+            display: inline-block;
+            background: #fbf8f5;
+            position: relative;
+            z-index: 1; 
+            @media all and (max-width: 620px) {
+                font-size: 14px;
+            }
+            &.isActive {
+                color: #d5b26a;
+            }
+        }
+    }
+    &__block {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(25% - 20px);
+        margin-bottom: 20px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 12px;
+        @media all and (max-width: 1023px) {
+            width: calc(50% - 20px);
+        }
+        @media all and (max-width: 620px) {
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    &__img {
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 18px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #333;
+        @media all and (max-width: 620px) {
+            font-size: 16px;
+        }
+    }
+    &__work {
+        margin-bottom: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #333;
+        margin-top: 5px;
+        @media all and (max-width: 620px) {
+            font-size: 12px;
+            margin-bottom: 12px;
+        }
+    }
+    &__inf {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #333;
+        opacity: .53;
+        @media all and (max-width: 620px) {
+            font-size: 12px;
+        }
+    }
+}
