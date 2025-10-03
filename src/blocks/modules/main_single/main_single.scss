@@ -1,0 +1,161 @@
+.main_single {
+    padding-top: 55px;
+    overflow: hidden;
+    padding-bottom: 55px;
+    @media all and (max-width: 620px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__title {
+        font-family: var(--third-family);
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #333;
+        margin-bottom: 45px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 38px;
+        }
+        @media all and (max-width: 620px) {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+    }
+    &__slider {
+        position: relative;
+        .slick-arrow {
+            position: absolute;
+            top: -70px;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 0;
+            background: #fff;
+            z-index: 2;
+            border: 0;
+            cursor: pointer;
+            background: url("data:image/svg+xml,%3Csvg width='11' height='23' viewBox='0 0 11 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 22L1 11.5L10 1' stroke='black' /%3E%3C/svg%3E") 50% / 9px no-repeat;
+            &:hover {
+                background: #d5b26a url("data:image/svg+xml,%3Csvg width='11' height='23' viewBox='0 0 11 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 22L1 11.5L10 1' stroke='white' /%3E%3C/svg%3E") 50% / 9px no-repeat;
+                @media all and (max-width: 620px) {
+                    background-size: 5px;
+                }
+            }
+            @media all and (max-width: 1023px) {
+                top: -63px;
+            }
+            @media all and (max-width: 620px) {
+                width: 28px;
+                height: 28px;
+                top: -45px;
+                background-size: 5px;
+            }
+            &::before {
+                font-family: 'slick';
+                font-size: 20px;
+                color: #333;
+                opacity: 1;
+            }
+            &.slick-prev {
+                right: 55px;
+                @media all and (max-width: 620px) {
+                    right: 35px;
+                }
+            }
+            &.slick-next {
+                top: -95px;
+                right: 0;
+                transform: rotate(180deg);
+                @media all and (max-width: 1023px) {
+                    top: -88px;
+                }
+                @media all and (max-width: 620px) {
+                    top: -60px;
+                }
+            }
+        }
+    }
+    .slick-list {
+        @media all and (min-width: 1023px) {
+            overflow: unset;
+        }
+    }
+    &__item {
+        display: flex !important;
+        gap: 25px;
+        text-decoration: none;
+        @media all and (max-width: 620px) {
+            align-items: center;
+            gap: 18px;
+        }
+    }
+    &__l-side {
+        flex: 0 0 103px;
+        text-align: center;
+        font-family: var(--third-family);
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #333;
+        @media all and (max-width: 620px) {
+            font-size: 18px;
+        }
+        span {
+            font-size: 80px;
+            display: block;
+            font-family: var(--third-family);
+            height: 60px;
+            @media all and (max-width: 620px) {
+                font-size: 40px;
+                height: 30px;
+            }
+        }
+    }
+    &__r-side {
+        width: 100%;
+    }
+    &__text {
+        margin-bottom: 11px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #333;
+        @media all and (max-width: 620px) {
+            font-size: 12px;
+        }
+    }
+    &__clock {
+        position: relative;
+        padding-left: 26px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #333;
+        opacity: 0.4;
+        @media all and (max-width: 620px) {
+            font-size: 12px;
+            padding-left: 20px;
+        }
+        &:before {
+            content: '';
+            left: 0;
+            position: absolute;
+            top: 50%;
+            opacity: 1;
+            width: 20px;
+            height: 20px;
+            margin-top: -10px;
+            background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.38'%3E%3Cpath d='M10.75 5C10.75 4.58579 10.4142 4.25 10 4.25C9.58579 4.25 9.25 4.58579 9.25 5V11C9.25 11.4142 9.58579 11.75 10 11.75H14C14.4142 11.75 14.75 11.4142 14.75 11C14.75 10.5858 14.4142 10.25 14 10.25H10.75V5Z' fill='black' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10ZM18.5 10C18.5 14.6944 14.6944 18.5 10 18.5C5.30558 18.5 1.5 14.6944 1.5 10C1.5 5.30558 5.30558 1.5 10 1.5C14.6944 1.5 18.5 5.30558 18.5 10Z' fill='black' /%3E%3C/g%3E%3C/svg%3E") 50% / 100% no-repeat;
+            @media all and (max-width: 620px) {
+                width: 13px;
+                height: 13px;
+                margin-top: -6.5px;
+            }
+        }
+    }
+}
