@@ -488,13 +488,6 @@ template {
 }
 
 @font-face {
-  font-family: "Astra";
-  font-display: swap;
-  src: url("../fonts/Astra-Serif.woff2") format("woff2"), url("../fonts/Astra-Serif.woff") format("woff"), url("../fonts/Astra-Serif.ttf") format("ttf");
-  font-weight: 400;
-}
-
-@font-face {
   font-family: "Involve";
   font-display: swap;
   src: url("../fonts/Involve-Regular.woff2") format("woff2"), url("../fonts/Involve-Regular.woff") format("woff"), url("../fonts/Involve-Regular.ttf") format("ttf");
@@ -506,6 +499,13 @@ template {
   font-display: swap;
   src: url("../fonts/Involve-SemiBold.woff2") format("woff2"), url("../fonts/Involve-SemiBold.woff") format("woff"), url("../fonts/Involve-SemiBold.ttf") format("ttf");
   font-weight: 600;
+}
+
+@font-face {
+  font-family: "Astra";
+  font-display: swap;
+  src: url("../fonts/Astra-Serif.woff2") format("woff2"), url("../fonts/Astra-Serif.woff") format("woff"), url("../fonts/Astra-Serif.ttf") format("ttf");
+  font-weight: 400;
 }
 
 :root {
@@ -522,7 +522,7 @@ body {
 *,
 ::after,
 ::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
   font-family: var(--font-family);
   outline: none;
   scroll-behavior: smooth;
@@ -834,7 +834,7 @@ textarea {
 }
 
 .first_main {
-  min-height: calc(100vh - 87px);
+  min-height: calc(100vh - 227px);
   padding-top: 80px;
   padding-bottom: 60px;
   background-position: 50% 50%;

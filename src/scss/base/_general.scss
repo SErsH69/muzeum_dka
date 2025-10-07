@@ -10,7 +10,7 @@ body {
 *,
 ::after,
 ::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
     font-family: var(--font-family);
     outline: none;
     scroll-behavior: smooth;
