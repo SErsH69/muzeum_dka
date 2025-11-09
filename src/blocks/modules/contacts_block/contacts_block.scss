@@ -1,13 +1,4 @@
 .contacts_block {
-    &__in {
-        padding-bottom: 135px;
-        @media all and (max-width: 1023px) {
-            padding-bottom: 110px;
-        }
-        @media all and (max-width: 620px) {
-            padding-bottom: 60px;
-        }
-    }
     &__items {
         display: flex;
         flex-wrap: wrap;

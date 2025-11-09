@@ -3,9 +3,11 @@
     border-radius: 30px 30px 0 0;
     padding-top: 74px;
     padding-bottom: 47px;
+    margin-top: 110px;
     @media all and (max-width: 559px) {
         padding-top: 30px;
         padding-bottom: 30px;
+        margin-top: 60px;
     }
     &__top {
         gap: vw(130);
