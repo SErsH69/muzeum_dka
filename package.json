@@ -15,7 +15,6 @@
     "bs-console-qrcode": "latest",
     "del": "latest",
     "dotenv": "latest",
-    "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
     "gulp-file-include": "latest",
@@ -42,6 +41,8 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
     "jquery": "^3.6.0",
     "slick-carousel": "^1.8.1",
     "vue": "^2.6.14"

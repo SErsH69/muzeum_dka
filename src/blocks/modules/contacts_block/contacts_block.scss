@@ -1,0 +1,284 @@
+.contacts_block {
+    &__in {
+        padding-bottom: 135px;
+        @media all and (max-width: 1023px) {
+            padding-bottom: 110px;
+        }
+        @media all and (max-width: 620px) {
+            padding-bottom: 60px;
+        }
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__block {
+        border-radius: 20px;
+        background: #fff;
+        padding: 40px;
+        @media all and (max-width: 620px) {
+            padding: 35px 15px;
+        }
+        &:nth-child(1) {
+            width: calc(40% - 10px);
+            @media all and (max-width: 1023px) {
+                width: 100%;
+            }
+        }
+        &:nth-child(2) {
+            width: calc(60% - 10px);
+            @media all and (max-width: 1023px) {
+                width: 100%;
+            }
+        }
+        &:nth-child(3) {
+            width: calc(30% - 10px);
+            @media all and (max-width: 1023px) {
+                width: calc(50% - 10px);
+            }
+            @media all and (max-width: 620px) {
+                width: 100%;
+            }
+        }
+        &:nth-child(4) {
+            width: calc(30% - 10px);
+            @media all and (max-width: 1023px) {
+                width: calc(50% - 10px);
+            }
+            @media all and (max-width: 620px) {
+                width: 100%;
+            }
+        }
+        &:nth-child(5) {
+            width: calc(40% - 20px);
+            @media all and (max-width: 1023px) {
+                width: 100%;
+            }
+        }
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #333;
+        font-family: var(--third-family);
+        margin-bottom: 30px;
+        @media all and (max-width: 620px) {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+    }
+    &__tel {
+        display: inline-block;
+        margin-bottom: 25px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #d5b26a;
+        padding-left: 29px;
+        position: relative;
+        @media all and (max-width: 620px) {
+            font-size: 16px;
+        }
+        &:before {
+            content: '';
+            width: 19px;
+            height: 19px;
+            left: 0;
+            position: absolute;
+            top: 50%;
+            margin-top: -9.5px;
+            background: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.733164 2.82477L1.5926 1.1059C2.2031 -0.115093 3.83038 -0.379167 4.79567 0.586115L7.0774 2.86785C7.68612 3.47657 7.83703 4.40652 7.45204 5.17649L7.18931 5.70195C6.76661 6.54736 6.75958 7.54773 7.25212 8.35445C7.63772 8.986 8.13138 9.7113 8.62303 10.2029C9.04675 10.6267 9.64403 11.0519 10.2053 11.4081C11.1458 12.0052 12.3457 11.8926 13.2431 11.2324C14.0433 10.6436 15.1561 10.7403 15.8427 11.4583L17.8022 13.5071C18.7328 14.4802 18.4555 16.0762 17.2512 16.6783L15.4749 17.5665C14.0944 18.2567 12.5303 18.55 11.0711 18.047C9.31835 17.4428 6.80647 16.2348 4.43566 13.864C2.06484 11.4932 0.856857 8.9813 0.252677 7.22858C-0.250312 5.7694 0.0429205 4.20526 0.733164 2.82477Z' fill='%23D5B26A' /%3E%3C/svg%3E") 50% / 100% no-repeat;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__socs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        @media all and (max-width: 1023px) {
+            justify-content: center;
+        }
+        @media all and (max-width: 620px) {
+            gap: 12px;
+            justify-content: flex-start;
+        }
+    }
+    &__soc {
+        width: 50px;
+        height: 50px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        color: #333;
+        @media all and (max-width: 620px) {
+            font-size: 12px;
+        }
+    }
+    &__more {
+        margin-top: 20px;
+        display: flex;
+        @media all and (max-width: 1023px) {
+            flex-direction: column-reverse;
+        }
+    }
+    &__map {
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        iframe {
+            width: 100%;
+            height: 100%;
+            @media all and (max-width: 1023px) {
+                min-height: 280px;
+            }
+        }
+        @media all and (max-width: 1023px) {
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+    }
+    &__form {
+        margin-left: 25px;
+        flex: 0 0 vw(487);
+        border-radius: 20px;
+        background: #fff;
+        padding: 40px;
+        @media all and (max-width: 1023px) {
+            padding: 40px 90px;
+            flex: none;
+            margin-left: 0;
+        }
+        @media all and (max-width: 620px) {
+            padding: 35px 15px;
+        }
+        &--title {
+            font-family: var(--third-family);
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 97%;
+            letter-spacing: -0.01em;
+            color: #333;
+            margin-bottom: 25px;
+            @media all and (max-width: 620px) {
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+        }
+        &--form-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+        }
+        input {
+            &[type="text"], &[type="email"] {
+                width: 100%;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 97%;
+                letter-spacing: -0.01em;
+                color: #333;
+                border: 1px solid #b6b6b6;
+                border-radius: 10px;
+                background: #f3f3f3;
+                padding: 20px 17px;
+                margin-bottom: 12px;
+                @media all and (max-width: 620px) {
+                    font-size: 12px;
+                    padding: 17px 12px;
+                }
+            }
+        }
+        &--bold {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 97%;
+            letter-spacing: -0.01em;
+            color: #333;
+            @media all and (max-width: 620px) {
+                font-size: 12px;
+                padding-bottom: 15px;
+                padding-top: 5px;
+            }
+        }
+        &--captcha {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            picture {
+                width: 60%;
+            }
+        }
+        .checkbox-item {
+            display: flex;
+            cursor: pointer;
+            gap: 7px;
+            position: relative;
+            margin-bottom: 25px;
+            .checkbox-input {
+                appearance: none;
+                width: 14px;
+                height: 14px;
+                flex: 0 0 14px;
+                border: 1px solid #d5b26a;
+                background-color: var(--itc-body-bg);
+                background-image: var(--itc-checkbox-bg-image);
+                cursor: pointer;
+                transition: var(--itc-transition);
+                margin: 0;
+                    &:checked,
+                    &:indeterminate {
+                        background-color: #d5b26a;
+                        background-image: #fff;
+                    }
+                    &:checked {
+                        --itc-checkbox-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+                    }
+            }
+            .checkbox-label {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 97%;
+                letter-spacing: -0.01em;
+                color: #333;
+                opacity: .5;
+            }
+        }
+    }
+    &__submit {
+        padding: 20px;
+        border-radius: 100px;
+        background: #d5b26a;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 97%;
+        letter-spacing: -0.01em;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        border: 0;
+        &:hover {
+            background: #a3874f;
+        }
+        @media all and (max-width: 620px) {
+            font-size: 12px;
+        }
+    }
+}
