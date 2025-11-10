@@ -209,6 +209,9 @@
         display: block;
         position: relative;
         margin-top: 15px;
+        &:hover {
+            background: #252525;
+        }
         @media all and (max-width: 1023px) {
             font-size: 12px;
             max-width: 100%;

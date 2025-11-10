@@ -70,6 +70,9 @@
         text-decoration: none;
         display: inline-block;
         background: #353535;
+        &:hover {
+            background: #252525;
+        }
         @media all and (max-width: 620px) {
             font-size: 12px;
             max-width: 150px;

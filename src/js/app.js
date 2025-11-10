@@ -8,6 +8,7 @@ import HistoryMain from '../blocks/modules/history_main/history_main.js';
 import MainVideo from '../blocks/modules/main_video/main_video.js';
 import MainMedal from '../blocks/modules/main_medal/main_medal.js';
 import MainSingle from '../blocks/modules/main_single/main_single.js';
+import FsliderBlock from '../blocks/modules/fslider_block/fslider_block.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
 window.app = new Vue({
@@ -25,6 +26,7 @@ window.app = new Vue({
         historyMain: new HistoryMain(),
         mainVideo: new MainVideo(),
         mainMedal: new MainMedal(),
+        fsliderBlock: new FsliderBlock(),
         mainSingle: new MainSingle(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -43,6 +45,7 @@ window.app = new Vue({
         this.historyMain.init();
         this.mainVideo.init();
         this.mainMedal.init();
+        this.fsliderBlock.init();
         this.mainSingle.init();
         this.modals.init();
     },

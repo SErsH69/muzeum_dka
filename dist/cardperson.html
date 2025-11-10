@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./img/favicon.jpg">
-    <title>Видеогалерея</title>
+    <title>Карточка персоны</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Manrope:wght@200..800&display=swap&_v=20251110021140" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?_v=20251110021140">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Manrope:wght@200..800&display=swap&_v=20251110115709" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?_v=20251110115709">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -84,66 +84,235 @@
     </div>
 </header>
         <main class="content">
-            <div class="first_block center_block">
-    <div class="first_block__in" style="background-image: url(./img/bg_first.png);">
-        <div class="first_block__bread">Главная/Заголовок</div>
-        <h1 class="first_block__title">Заголовок</h1>
-        <div class="first_block__text">Общероссийский профессиональный союз работников нефтяной, газовой отраслей промышленности и строительства</div>
-        <div class="first_block__img">
-            <picture><source srcset="./img/bg_first.webp" type="image/webp"><img src="./img/bg_first.png" alt=""></picture>
+            <div class="card_block center_block">
+    <div class="card_block__in">
+        <div class="card_block__bread">Главная/Люди профсоюза/Иванов Иван Иванович</div>
+        <div class="card_block__item">
+            <div class="card_block__l-side">
+                <div class="card_block__img">
+                    <picture><source srcset="./img/person.webp" type="image/webp"><img src="./img/person.jpg" alt=""></picture>
+                </div>
+                <h1 class="card_block__title card_block__title--mobile">Иванов Иван Иванович</h1>
+                <div class="card_block__work_mob">Председатель ОППО ОАО "...."</div>
+                <div class="card_block__logos">
+                    <a href="#" class="card_block__logo">
+                        <img src="./img/logo_black.svg" alt="">
+                    </a>
+                    <a href="#" class="card_block__logo">
+                        <img src="./img/logo_black.svg" alt="">
+                    </a>
+                </div>
+                <div class="card_block__sertificates">
+                    <div class="card_block__sertificate">
+                        <picture><source srcset="./img/sertificat.webp" type="image/webp"><img src="./img/sertificat.jpeg" alt=""></picture>
+                    </div>
+                    <div class="card_block__sertificate">
+                        <picture><source srcset="./img/sertificat.webp" type="image/webp"><img src="./img/sertificat.jpeg" alt=""></picture>
+                    </div>
+                    <div class="card_block__sertificate">
+                        <picture><source srcset="./img/sertificat.webp" type="image/webp"><img src="./img/sertificat.jpeg" alt=""></picture>
+                    </div>
+                    <div class="card_block__sertificate">
+                        <picture><source srcset="./img/sertificat.webp" type="image/webp"><img src="./img/sertificat.jpeg" alt=""></picture>
+                    </div>
+                </div>
+            </div>
+            <div class="card_block__r-side">
+                <h1 class="card_block__title card_block__title--desktop">Иванов Иван Иванович</h1>
+                <div class="card_block__top">
+                    <div class="card_block__work">Председатель ОППО ОАО "...."</div>
+                    <a href="#" class="card_block__error">Нашли неточность?</a>
+                </div>
+                <div class="card_block__more">
+                    <div class="card_block__more--title">Биография</div>
+                    <ul class="card_block__list">
+                        <li class="card_block__list--item">
+                            <div class="card_block__list--date">12.09.1965</div>
+                            <div class="card_block__list--text">Здесь собраны самые яркие моменты нашей деятельности: мероприятия, акции, рабочие будни и праздники. Эти фотографии не только напоминают о прошлом, но и вдохновляют на новые свершения.</div>
+                        </li>
+                        <li class="card_block__list--item">
+                            <div class="card_block__list--date">12.09.1965</div>
+                            <div class="card_block__list--text">Здесь собраны самые яркие моменты нашей деятельности: мероприятия, акции, рабочие будни и праздники. Эти фотографии не только напоминают о прошлом, но и вдохновляют на новые свершения. Здесь собраны самые яркие моменты нашей деятельности: мероприятия, акции, рабочие будни и праздники. Эти фотографии не только напоминают о прошлом, но и вдохновляют на новые свершения</div>
+                        </li>
+                        <li class="card_block__list--item">
+                            <div class="card_block__list--date">12.09.1965</div>
+                            <div class="card_block__list--text">Здесь собраны самые яркие моменты нашей деятельности: мероприятия, акции, рабочие будни и праздники. Эти фотографии не только напоминают о прошлом, но и вдохновляют на новые свершения.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-            <div class="videogallery_block">
-    <div class="videogallery_block__in center_block">
-        <div class="videogallery_block__list">
-            <div class="videogallery_block__button videogallery_block__button--isActive">Все фото</div>
-            <div class="videogallery_block__button">Заседания</div>
-            <div class="videogallery_block__button">Заседания</div>
-            <div class="videogallery_block__button">Заседания</div>
-            <div class="videogallery_block__button">Заседания</div>
+            <div class="main_medal" style="background-image: url(./img/bg_prof.jpg);">
+    <div class="main_medal__in center_block">
+        <div class="main_medal__l-side">
+            <div class="main_medal__title">Награды Профсоюза</div>
+            <div class="main_medal__text">Наши награды – это результат многолетней работы, профессионализма и стремления к совершенству.</div>
+            <div class="main_medal__more">
+                <div class="main_medal__icon">
+                    <img src="./img/hand.svg" alt="">
+                </div>
+                <a href="#" class="main_medal__btn">Все достижения</a>
+            </div>
         </div>
-        <div class="videogallery_block__images">
-            <a href="#" class="videogallery_block__image">
-                <picture><source srcset="./img/image.webp" type="image/webp"><img src="./img/image.jpg" alt=""></picture>
-                <div class="videogallery_block__info">
-                    <div class="videogallery_block__text">Отчетно выборочная конференция ставропольской краевой организации профсоюза</div>
-                    <div class="videogallery_block__link">Открыть фото</div>
+        <div class="main_medal__r-side">
+            <div class="main_medal__slider js_medal">
+                <div class="main_medal__img">
+                    <picture><source srcset="./img/img_medal.webp" type="image/webp"><img src="./img/img_medal.png" alt=""></picture>
+                </div>
+                <div class="main_medal__img">
+                    <picture><source srcset="./img/img_medal.webp" type="image/webp"><img src="./img/img_medal.png" alt=""></picture>
+                </div>
+                <div class="main_medal__img">
+                    <picture><source srcset="./img/img_medal.webp" type="image/webp"><img src="./img/img_medal.png" alt=""></picture>
+                </div>
+                <div class="main_medal__img">
+                    <picture><source srcset="./img/img_medal.webp" type="image/webp"><img src="./img/img_medal.png" alt=""></picture>
+                </div>
+                <div class="main_medal__img">
+                    <picture><source srcset="./img/img_medal.webp" type="image/webp"><img src="./img/img_medal.png" alt=""></picture>
+                </div>
+                <div class="main_medal__img">
+                    <picture><source srcset="./img/img_medal.webp" type="image/webp"><img src="./img/img_medal.png" alt=""></picture>
+                </div>
+                <div class="main_medal__img">
+                    <picture><source srcset="./img/img_medal.webp" type="image/webp"><img src="./img/img_medal.png" alt=""></picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="main_gallery">
+    <div class="main_gallery__in center_block">
+        <div class="main_gallery__top">
+            <div class="main_gallery__title">Фотогалерея</div>
+            <div class="main_gallery__text">Здесь собраны самые яркие моменты нашей деятельности: мероприятия, акции, рабочие будни и праздники. Эти фотографии не только напоминают о прошлом, но и вдохновляют на новые свершения.</div>
+        </div>
+        <div class="main_gallery__grid">
+            <div class="main_gallery__img main_gallery__item1">
+                <picture><source srcset="./img/img1.webp" type="image/webp"><img src="./img/img1.jpg" alt=""></picture>
+            </div>
+            <div class="main_gallery__img main_gallery__item2">
+                <picture><source srcset="./img/img2.webp" type="image/webp"><img src="./img/img2.jpg" alt=""></picture>
+            </div>
+            <div class="main_gallery__img main_gallery__item3">
+                <picture><source srcset="./img/img3.webp" type="image/webp"><img src="./img/img3.jpg" alt=""></picture>
+            </div>
+            <div class="main_gallery__img main_gallery__item4">
+                <picture><source srcset="./img/img4.webp" type="image/webp"><img src="./img/img4.jpg" alt=""></picture>
+            </div>
+            <div class="main_gallery__img main_gallery__item5">
+                <picture><source srcset="./img/img5.webp" type="image/webp"><img src="./img/img5.jpg" alt=""></picture>
+            </div>
+            <div class="main_gallery__img main_gallery__item6">
+                <picture><source srcset="./img/img6.webp" type="image/webp"><img src="./img/img6.jpg" alt=""></picture>
+            </div>
+            <a href="#" class="main_gallery__btn">Смотреть все фото</a>
+        </div>
+    </div>
+</div>
+            <div class="main_video">
+    <div class="main_video__in center_block">
+        <div class="main_video__top">
+            <div class="main_video__l-side">
+                <div class="main_video__title">Видеогалерея</div>
+            </div>
+            <div class="main_video__r-side">
+                <div class="main_video__text">Уникальные видеоматериалы о ключевых событиях и людях, формирующих историю Нефтегазстройпрофсоюза России. Смотрите и узнавайте больше о нашем пути</div>
+                <a href="#" class="main_video__btn">Смотреть все видео</a>
+            </div>
+        </div>
+        <div class="main_video__slider js_video_slider">
+            <div class="main_video__img">
+                <picture><source srcset="./img/img_video.webp" type="image/webp"><img src="./img/img_video.jpg" alt=""></picture>
+                <div class="main_video__info">
+                    <span>Работа профсоюзных организаций в годы ВОВ</span>
+                </div>
+            </div>
+            <div class="main_video__img">
+                <picture><source srcset="./img/img_video.webp" type="image/webp"><img src="./img/img_video.jpg" alt=""></picture>
+                <div class="main_video__info">
+                    <span>Работа профсоюзных организаций в годы ВОВ</span>
+                </div>
+            </div>
+            <div class="main_video__img">
+                <picture><source srcset="./img/img_video.webp" type="image/webp"><img src="./img/img_video.jpg" alt=""></picture>
+                <div class="main_video__info">
+                    <span>Работа профсоюзных организаций в годы ВОВ</span>
+                </div>
+            </div>
+            <div class="main_video__img">
+                <picture><source srcset="./img/img_video.webp" type="image/webp"><img src="./img/img_video.jpg" alt=""></picture>
+                <div class="main_video__info">
+                    <span>Работа профсоюзных организаций в годы ВОВ</span>
+                </div>
+            </div>
+            <div class="main_video__img">
+                <picture><source srcset="./img/img_video.webp" type="image/webp"><img src="./img/img_video.jpg" alt=""></picture>
+                <div class="main_video__info">
+                    <span>Работа профсоюзных организаций в годы ВОВ</span>
+                </div>
+            </div>
+            <div class="main_video__img">
+                <picture><source srcset="./img/img_video.webp" type="image/webp"><img src="./img/img_video.jpg" alt=""></picture>
+                <div class="main_video__info">
+                    <span>Работа профсоюзных организаций в годы ВОВ</span>
+                </div>
+            </div>
+            <div class="main_video__img">
+                <picture><source srcset="./img/img_video.webp" type="image/webp"><img src="./img/img_video.jpg" alt=""></picture>
+                <div class="main_video__info">
+                    <span>Работа профсоюзных организаций в годы ВОВ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="main_single">
+    <div class="main_single__in center_block">
+        <div class="main_single__title">Мероприятия</div>
+        <div class="main_single__slider js_slides">
+            <a href="#" class="main_single__item">
+                <div class="main_single__l-side"><span>14</span>05.2025</div>
+                <div class="main_single__r-side">
+                    <div class="main_single__text"> Уникальные видеоматериалы о ключевых событиях и людях, формирующих историю Нефтегазстройпрофсоюза России. Смотрите и узнавайте больше о нашем пути</div>
+                    <div class="main_single__clock">12:00 Семинар Офлайн</div>
                 </div>
             </a>
-            <a href="#" class="videogallery_block__image">
-                <picture><source srcset="./img/image.webp" type="image/webp"><img src="./img/image.jpg" alt=""></picture>
-                <div class="videogallery_block__info">
-                    <div class="videogallery_block__text">Отчетно выборочная конференция ставропольской краевой организации профсоюза</div>
-                    <div class="videogallery_block__link">Открыть фото</div>
+            <a href="#" class="main_single__item">
+                <div class="main_single__l-side"><span>14</span>05.2025</div>
+                <div class="main_single__r-side">
+                    <div class="main_single__text"> Уникальные видеоматериалы о ключевых событиях и людях, формирующих историю Нефтегазстройпрофсоюза России. Смотрите и узнавайте больше о нашем пути</div>
+                    <div class="main_single__clock">12:00 Семинар Офлайн</div>
                 </div>
             </a>
-            <a href="#" class="videogallery_block__image">
-                <picture><source srcset="./img/image.webp" type="image/webp"><img src="./img/image.jpg" alt=""></picture>
-                <div class="videogallery_block__info">
-                    <div class="videogallery_block__text">Отчетно выборочная конференция ставропольской краевой организации профсоюза</div>
-                    <div class="videogallery_block__link">Открыть фото</div>
+            <a href="#" class="main_single__item">
+                <div class="main_single__l-side"><span>14</span>05.2025</div>
+                <div class="main_single__r-side">
+                    <div class="main_single__text"> Уникальные видеоматериалы о ключевых событиях и людях, формирующих историю Нефтегазстройпрофсоюза России. Смотрите и узнавайте больше о нашем пути</div>
+                    <div class="main_single__clock">12:00 Семинар Офлайн</div>
                 </div>
             </a>
-            <a href="#" class="videogallery_block__image">
-                <picture><source srcset="./img/image.webp" type="image/webp"><img src="./img/image.jpg" alt=""></picture>
-                <div class="videogallery_block__info">
-                    <div class="videogallery_block__text">Отчетно выборочная конференция ставропольской краевой организации профсоюза</div>
-                    <div class="videogallery_block__link">Открыть фото</div>
+            <a href="#" class="main_single__item">
+                <div class="main_single__l-side"><span>14</span>05.2025</div>
+                <div class="main_single__r-side">
+                    <div class="main_single__text"> Уникальные видеоматериалы о ключевых событиях и людях, формирующих историю Нефтегазстройпрофсоюза России. Смотрите и узнавайте больше о нашем пути</div>
+                    <div class="main_single__clock">12:00 Семинар Офлайн</div>
                 </div>
             </a>
-            <a href="#" class="videogallery_block__image">
-                <picture><source srcset="./img/image.webp" type="image/webp"><img src="./img/image.jpg" alt=""></picture>
-                <div class="videogallery_block__info">
-                    <div class="videogallery_block__text">Отчетно выборочная конференция ставропольской краевой организации профсоюза</div>
-                    <div class="videogallery_block__link">Открыть фото</div>
+            <a href="#" class="main_single__item">
+                <div class="main_single__l-side"><span>14</span>05.2025</div>
+                <div class="main_single__r-side">
+                    <div class="main_single__text"> Уникальные видеоматериалы о ключевых событиях и людях, формирующих историю Нефтегазстройпрофсоюза России. Смотрите и узнавайте больше о нашем пути</div>
+                    <div class="main_single__clock">12:00 Семинар Офлайн</div>
                 </div>
             </a>
-            <a href="#" class="videogallery_block__image">
-                <picture><source srcset="./img/image.webp" type="image/webp"><img src="./img/image.jpg" alt=""></picture>
-                <div class="videogallery_block__info">
-                    <div class="videogallery_block__text">Отчетно выборочная конференция ставропольской краевой организации профсоюза</div>
-                    <div class="videogallery_block__link">Открыть фото</div>
+            <a href="#" class="main_single__item">
+                <div class="main_single__l-side"><span>14</span>05.2025</div>
+                <div class="main_single__r-side">
+                    <div class="main_single__text"> Уникальные видеоматериалы о ключевых событиях и людях, формирующих историю Нефтегазстройпрофсоюза России. Смотрите и узнавайте больше о нашем пути</div>
+                    <div class="main_single__clock">12:00 Семинар Офлайн</div>
                 </div>
             </a>
         </div>
@@ -303,6 +472,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20251110021140"></script>
+    <script src="js/app.min.js?_v=20251110115709"></script>
 </body>
 </html>

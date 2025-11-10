@@ -12,10 +12,13 @@ $btn-color: #fff;
     &__top {
         display: flex;
         align-items: center;
-        margin-bottom: 75px;
+        margin-bottom: 20px;
+        padding: 50px 40px;
+        background: #fff;
+        border-radius: 20px;
         @media all and (max-width: 1023px) {
             flex-direction: column;
-            margin-bottom: 50px;
+            margin-bottom: 15px;
         }
     }
     &__title {
@@ -27,6 +30,7 @@ $btn-color: #fff;
         letter-spacing: -0.01em;
         color: #333;
         position: relative;
+        z-index: 10;
         &:before {
             content: '';
             position: absolute;
@@ -90,7 +94,9 @@ $btn-color: #fff;
         width: 100%;
         text-decoration: none;
         position: relative;
-
+        &:hover {
+            background: #252525;
+        }
         @media all and (max-width: 1023px) {
             font-size: 12px;
             max-width: 100%;

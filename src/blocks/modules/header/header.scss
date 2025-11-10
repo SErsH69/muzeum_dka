@@ -110,7 +110,7 @@
             text-align: center;
             cursor: pointer;
             &:hover {
-                background: #4a4a48;
+                background: #b9984f;
             }
         }
     }
@@ -133,6 +133,9 @@
         padding: 11px 7px;
         border: 0;
         cursor: pointer;
+        &:hover {
+            background: #b9984f;
+        }
     }
     &__accessibility {
         border-radius: 5px;
@@ -141,6 +144,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &:hover {
+            background: #b9984f;
+        }
     }
     &__burger {
         display: none;
