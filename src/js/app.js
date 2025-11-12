@@ -9,6 +9,7 @@ import MainVideo from '../blocks/modules/main_video/main_video.js';
 import MainMedal from '../blocks/modules/main_medal/main_medal.js';
 import MainSingle from '../blocks/modules/main_single/main_single.js';
 import FsliderBlock from '../blocks/modules/fslider_block/fslider_block.js';
+import CookieBanner from '../blocks/modules/cookie_banner/cookie_banner.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
 window.app = new Vue({
@@ -27,6 +28,7 @@ window.app = new Vue({
         mainVideo: new MainVideo(),
         mainMedal: new MainMedal(),
         fsliderBlock: new FsliderBlock(),
+        cookieBanner: new CookieBanner(),
         mainSingle: new MainSingle(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -46,6 +48,7 @@ window.app = new Vue({
         this.mainVideo.init();
         this.mainMedal.init();
         this.fsliderBlock.init();
+        this.cookieBanner.init();
         this.mainSingle.init();
         this.modals.init();
     },

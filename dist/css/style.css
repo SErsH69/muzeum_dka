@@ -548,14 +548,24 @@ body {
   min-height: 100vh;
 }
 
+.wrapper__page_error .footer {
+  margin-top: 0;
+}
+
+.wrapper__page_error .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .content {
   z-index: 2;
-  flex: 1;
+  flex: 1 0 auto;
   position: relative;
 }
 
 .footer {
-  flex: 0 0 auto;
+  flex-shrink: 0;
 }
 
 .center_block {
@@ -3520,6 +3530,108 @@ textarea {
   font-weight: 700;
 }
 
+.error_block {
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.error_block__in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.error_block__title {
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 97%;
+  letter-spacing: -0.01em;
+  color: #353535;
+  margin-bottom: 25px;
+}
+
+.error_block__text {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 97%;
+  letter-spacing: -0.01em;
+  color: #353535;
+  margin-bottom: 60px;
+}
+
+.error_block__btn {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 97%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  padding: 16px 70px;
+  border-radius: 100px;
+  background: #d5b26a;
+  text-decoration: none;
+}
+
+.error_block__btn:hover {
+  background: #a3874f;
+}
+
+.cookie_banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  max-width: 700px;
+  width: calc(100% - 40px);
+  background-color: #c8a76b;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+  font-family: var(--second-family);
+  color: #fff;
+  padding: 28px 25px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.cookie_banner.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cookie_banner__text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.cookie_banner__btn {
+  background: #fff;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #292929;
+  border: none;
+  padding: 10px 59px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.cookie_banner__btn:hover {
+  background: #252525;
+  color: #fff;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -4593,6 +4705,16 @@ textarea {
     font-size: 12px;
   }
 
+  .error_block__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .error_block__text {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
   .modal__in {
     max-width: 603px;
     border-radius: 16px;
@@ -5408,6 +5530,14 @@ textarea {
 
   .contacts_block__submit {
     font-size: 12px;
+  }
+
+  .cookie_banner {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
   }
 }
 

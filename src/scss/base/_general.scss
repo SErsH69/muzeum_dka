@@ -31,14 +31,24 @@ body {
     flex-direction: column;
     position: relative;
     min-height: 100vh;
+    &__page_error {
+        .footer {
+            margin-top: 0;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 .content {
     z-index: 2;
-    flex: 1;
+    flex: 1 0 auto;
     position: relative;
 }
 .footer {
-    flex: 0 0 auto;
+    flex-shrink: 0;
 }
 .center_block {
     max-width: 1235px;
