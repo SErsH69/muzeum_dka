@@ -4,6 +4,11 @@
   --third-family: "Astra", sans-serif;
   --font3: "Manrope", sans-serif;
 }
+html {
+    &.hidden {
+        overflow: hidden !important;
+    }
+}
 body {
     box-sizing: border-box;
 }

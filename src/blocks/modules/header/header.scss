@@ -180,6 +180,9 @@
         &--body {
             position: fixed;
             z-index: 10;
+            bottom: 0;
+            height: 100vh;
+            overflow: auto;
             left: -100%;
             top: 0;
             width: 100%;

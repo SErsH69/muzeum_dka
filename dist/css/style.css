@@ -515,6 +515,10 @@ template {
   --font3: "Manrope", sans-serif;
 }
 
+html.hidden {
+  overflow: hidden !important;
+}
+
 body {
   box-sizing: border-box;
 }
@@ -808,6 +812,9 @@ textarea {
 .header__burger--body {
   position: fixed;
   z-index: 10;
+  bottom: 0;
+  height: 100vh;
+  overflow: auto;
   left: -100%;
   top: 0;
   width: 100%;
