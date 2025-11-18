@@ -46,6 +46,12 @@ body {
     z-index: 2;
     flex: 1 0 auto;
     position: relative;
+    &__congress {
+        .main_video {
+            background: #fff;
+            border-radius: 20px;
+        }
+    }
 }
 .footer {
     flex-shrink: 0;

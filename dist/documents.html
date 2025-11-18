@@ -8,8 +8,8 @@
     <title>Контакты</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Manrope:wght@200..800&display=swap&_v=20251112115800" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css?_v=20251112115800">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Manrope:wght@200..800&display=swap&_v=20251118205635" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css?_v=20251118205635">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -39,7 +39,7 @@
             <input type="text" placeholder="Я ищу...">
             <input type="button" value="Найти">
         </form>
-        <div class="header__controls">
+        <!-- <div class="header__controls">
             <select class="header__lang">
                 <option value="ru">RU</option>
                 <option value="en">EN</option>
@@ -60,11 +60,24 @@
                     </defs>
                 </svg>
             </a>
-        </div>
+        </div> -->
         <div class="header__burger" :class="{'isOpened': header.isMobileMenuOpened}">
             <div class="header__burger--icon" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
             <div class="header__burger--body">
-                <div class="header__burger--close" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
+                <div class="header__burger__top">
+                    <a href="/" class="header__burger__logo">
+                        <img src="./img/svg/logo.svg" alt="">
+                    </a>
+                    <div class="header__burger--close" @click.prevent="header.toogleMobileMenu.apply(header)"></div>
+                </div>
+                
+                <form action="" class="header__search">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.90607 9.96063C7.97373 10.6713 6.80948 11.0933 5.54666 11.0933C2.48333 11.0933 0 8.61 0 5.54666C0 2.48333 2.48333 0 5.54666 0C8.61 0 11.0933 2.48333 11.0933 5.54666C11.0933 6.98275 10.5476 8.29136 9.65213 9.27641C9.67055 9.28895 9.68837 9.30281 9.70547 9.31801L12.8255 12.0913C13.0401 12.2821 13.0594 12.6108 12.8686 12.8255C12.6778 13.0401 12.3492 13.0594 12.1345 12.8686L9.01453 10.0953C8.96988 10.0556 8.93369 10.01 8.90607 9.96063ZM10.0533 5.54666C10.0533 8.03563 8.03563 10.0533 5.54666 10.0533C3.0577 10.0533 1.04 8.03563 1.04 5.54666C1.04 3.0577 3.0577 1.04 5.54666 1.04C8.03563 1.04 10.0533 3.0577 10.0533 5.54666Z" fill="white" />
+                    </svg>
+                    <input type="text" placeholder="Я ищу...">
+                    <input type="button" value="Найти">
+                </form>
                 <nav class="header__burger--menu">
                     <ul>
                         <li><a @click="header.toogleMobileMenu.apply(header)" href="#">История профсоюза</a></li>
@@ -233,7 +246,7 @@
         <div class="footer__bottom">
             <a href="#" class="footer__link">Политика обработки персональных данных</a>
             <div class="footer__copy">© 2009 – 2025 zu.ru ООО «МНР»</div>
-            <a href="https://dka-media.ru/" target="_blank" rel="noopener noreferrer" class="footer__brand">Разработка сайта <span>DKA-MEDIA</span></a>
+            <a href="https://dka-media.ru/" target="_blank" rel="noopener noreferrer" class="footer__brand">Разработка сайта <span>WEBULA</span></a>
         </div>
     </div>
 </footer>
@@ -319,6 +332,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20251112115800"></script>
+    <script src="js/app.min.js?_v=20251118205635"></script>
 </body>
 </html>

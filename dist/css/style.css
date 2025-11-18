@@ -481,9 +481,16 @@ template {
 }
 
 @font-face {
-  font-family: "Astra";
+  font-family: "Involve";
   font-display: swap;
-  src: url("../fonts/Astra-Serif.woff2") format("woff2"), url("../fonts/Astra-Serif.woff") format("woff"), url("../fonts/Astra-Serif.ttf") format("ttf");
+  src: url("../fonts/Involve-Bold.woff2") format("woff2"), url("../fonts/Involve-Bold.woff") format("woff"), url("../fonts/Involve-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Involve";
+  font-display: swap;
+  src: url("../fonts/Involve-Regular.woff2") format("woff2"), url("../fonts/Involve-Regular.woff") format("woff"), url("../fonts/Involve-Regular.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -495,16 +502,9 @@ template {
 }
 
 @font-face {
-  font-family: "Involve";
+  font-family: "Astra";
   font-display: swap;
-  src: url("../fonts/Involve-Bold.woff2") format("woff2"), url("../fonts/Involve-Bold.woff") format("woff"), url("../fonts/Involve-Bold.ttf") format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Involve";
-  font-display: swap;
-  src: url("../fonts/Involve-Regular.woff2") format("woff2"), url("../fonts/Involve-Regular.woff") format("woff"), url("../fonts/Involve-Regular.ttf") format("ttf");
+  src: url("../fonts/Astra-Serif.woff2") format("woff2"), url("../fonts/Astra-Serif.woff") format("woff"), url("../fonts/Astra-Serif.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -562,6 +562,11 @@ body {
   z-index: 2;
   flex: 1 0 auto;
   position: relative;
+}
+
+.content__congress .main_video {
+  background: #fff;
+  border-radius: 20px;
 }
 
 .footer {
@@ -733,7 +738,7 @@ textarea {
 
 .header__controls {
   margin-left: 25px;
-  display: flex;
+  display: none;
   gap: 6px;
 }
 
@@ -796,10 +801,9 @@ textarea {
   z-index: 10;
   left: -100%;
   top: 0;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: calc(100% - 30px);
-  top: 46px;
+  width: 100%;
+  top: 0px;
+  padding: 15px 20px;
   background: #1E1E1C;
 }
 
@@ -2620,7 +2624,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 60px;
-  padding-top: 80px;
+  padding-top: 85px;
   padding-bottom: 90px;
   overflow: hidden;
   margin-top: 90px;
@@ -2736,6 +2740,32 @@ textarea {
   gap: 8px;
   display: flex;
   flex-direction: column;
+}
+
+.photogallery_block__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.photogallery_block__button {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 97%;
+  letter-spacing: -0.01em;
+  color: #353535;
+  border-radius: 100px;
+  padding: 17px 34px;
+  background: #d9d9d9;
+  cursor: pointer;
+}
+
+.photogallery_block__button:hover,
+.photogallery_block__button--isActive {
+  background: #d5b26a;
+  color: #fff;
 }
 
 .photogallery_block__grid {
@@ -3229,7 +3259,7 @@ textarea {
 
 .contacts_block__form {
   margin-left: 25px;
-  flex: 0 0 25.3645833333vw;
+  flex: 0 0 487px;
   border-radius: 20px;
   background: #fff;
   padding: 40px;
@@ -5405,6 +5435,16 @@ textarea {
 
   .fslider_block__inf {
     font-size: 12px;
+  }
+
+  .photogallery_block__list {
+    gap: 8px;
+    margin-bottom: 25px;
+  }
+
+  .photogallery_block__button {
+    font-size: 12px;
+    padding: 7px 20px;
   }
 
   .videogallery_block__list {
