@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -495,17 +497,17 @@ template {
 }
 
 @font-face {
-  font-family: "Involve";
-  font-display: swap;
-  src: url("../fonts/Involve-SemiBold.woff2") format("woff2"), url("../fonts/Involve-SemiBold.woff") format("woff"), url("../fonts/Involve-SemiBold.ttf") format("ttf");
-  font-weight: 600;
-}
-
-@font-face {
   font-family: "Astra";
   font-display: swap;
   src: url("../fonts/Astra-Serif.woff2") format("woff2"), url("../fonts/Astra-Serif.woff") format("woff"), url("../fonts/Astra-Serif.ttf") format("ttf");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Involve";
+  font-display: swap;
+  src: url("../fonts/Involve-SemiBold.woff2") format("woff2"), url("../fonts/Involve-SemiBold.woff") format("woff"), url("../fonts/Involve-SemiBold.ttf") format("ttf");
+  font-weight: 600;
 }
 
 :root {
@@ -2980,6 +2982,160 @@ textarea {
   background: url("data:image/svg+xml,%3Csvg width='22' height='8' viewBox='0 0 22 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 3.18188C0.223858 3.18188 0 3.40574 0 3.68188C0 3.95803 0.223858 4.18188 0.5 4.18188V3.68188V3.18188ZM21.8536 4.03544C22.0488 3.84018 22.0488 3.52359 21.8536 3.32833L18.6716 0.146351C18.4763 -0.0489113 18.1597 -0.0489113 17.9645 0.146351C17.7692 0.341613 17.7692 0.658195 17.9645 0.853458L20.7929 3.68188L17.9645 6.51031C17.7692 6.70557 17.7692 7.02216 17.9645 7.21742C18.1597 7.41268 18.4763 7.41268 18.6716 7.21742L21.8536 4.03544ZM0.5 3.68188V4.18188H21.5V3.68188V3.18188H0.5V3.68188Z' fill='white' /%3E%3C/svg%3E") 50%/100% no-repeat;
 }
 
+.ngsp-timeline {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 45px 60px;
+  background: #ffffff;
+  border-radius: 24px;
+  max-width: 1185px;
+  /* Скрыть горизонтальный скролл в WebKit, но оставить функциональность */
+  /* Адаптив */
+}
+
+.ngsp-timeline__viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.ngsp-timeline__track {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 45px;
+  padding-right: 45px;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.ngsp-timeline__track--l-side {
+  position: absolute;
+  left: 0;
+  bottom: 66px;
+  width: 3px;
+  background: #9d9d9d;
+  height: 16px;
+}
+
+.ngsp-timeline__track--r-side {
+  position: absolute;
+  right: 0;
+  bottom: 66px;
+  background: #9d9d9d;
+  width: 3px;
+  height: 16px;
+}
+
+.ngsp-timeline__track::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 73px;
+  width: 100%;
+  height: 2px;
+  background: #9d9d9d;
+}
+
+.ngsp-timeline__item {
+  position: relative;
+  flex: 0 0 230px;
+  padding: 0 12px;
+  text-align: left;
+}
+
+.ngsp-timeline__item--accent {
+  flex-basis: 260px;
+}
+
+.ngsp-timeline__stem {
+  position: absolute;
+  left: 13px;
+  bottom: 72px;
+  width: 1px;
+  height: 140px;
+  background: #d5d0ca;
+  transform: translateX(-50%);
+}
+
+.ngsp-timeline__point {
+  position: absolute;
+  left: 9px;
+  bottom: 70px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #d5b26a;
+}
+
+.ngsp-timeline__year {
+  position: absolute;
+  left: -4px;
+  bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 97%;
+  letter-spacing: -0.01em;
+  color: #333;
+}
+
+.ngsp-timeline__cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 190px;
+}
+
+.ngsp-timeline__card {
+  max-width: 260px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #f3f3f3;
+  border: 1px solid #b6b6b6;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.04);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 97%;
+  letter-spacing: -0.01em;
+  color: #333;
+}
+
+.ngsp-timeline__card-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.ngsp-timeline__card-text {
+  font-weight: 400;
+}
+
+.ngsp-timeline__card:hover {
+  background: #d5b26a;
+  border-color: #d5b26a;
+  color: #ffffff;
+}
+
+.ngsp-timeline__card:hover .ngsp-timeline__card-title,
+.ngsp-timeline__card:hover .ngsp-timeline__card-text {
+  color: #ffffff;
+}
+
+.ngsp-timeline__viewport::-webkit-scrollbar {
+  height: 6px;
+}
+
+.ngsp-timeline__viewport::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ngsp-timeline__viewport::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #d1c3b4;
+}
+
 .info_block__block {
   display: flex;
   justify-content: space-between;
@@ -4866,6 +5022,21 @@ textarea {
 
   .modal__form--submit:active label {
     background-size: 33px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .ngsp-timeline {
+    padding: 30px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ngsp-timeline__axis {
+    left: 24px;
+    right: 24px;
   }
 }
 

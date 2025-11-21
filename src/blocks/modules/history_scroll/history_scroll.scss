@@ -1,0 +1,166 @@
+.ngsp-timeline {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 45px 60px;
+    background: #ffffff;
+    border-radius: 24px;
+    max-width: 1185px;
+    @media (max-width: 1023px) {
+        padding: 30px;
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+
+  &__viewport {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+  }
+
+ &__track {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 45px;
+  padding-right: 45px;
+  width: max-content;
+  &--l-side {
+    position: absolute;
+    left: 0;
+    bottom: 66px;
+    width: 3px;
+    background: #9d9d9d;
+    height: 16px;    
+  }
+  &--r-side {
+    position: absolute;
+    right: 0;
+    bottom: 66px;
+    background: #9d9d9d;
+    width: 3px;
+    height: 16px; 
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 73px;
+    width: 100%;
+    height: 2px;
+    background: #9d9d9d;
+  }
+}
+
+  &__item {
+    position: relative;
+    flex: 0 0 230px;
+    padding: 0 12px;
+    text-align: left;
+
+    &--accent {
+      // для первого блока можно сделать чуть шире
+      flex-basis: 260px;
+    }
+  }
+
+  // вертикальная линия от оси к карточкам
+  &__stem {
+    position: absolute;
+    left: 13px;
+    bottom: 72px;
+    width: 1px;
+    height: 140px;
+    background: #d5d0ca;
+    transform: translateX(-50%);
+  }
+
+  // точка на оси
+  &__point {
+    position: absolute;
+    left: 9px;
+    bottom: 70px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #d5b26a;
+  }
+
+  // подпись года
+  &__year {
+    position: absolute;
+    left: -4px;
+    bottom: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 97%;
+    letter-spacing: -0.01em;
+    color: #333;
+  }
+
+  // контейнер карточек над линией
+  &__cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 190px; // чтобы карточки были над осью
+  }
+
+  &__card {
+    max-width: 260px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: #f3f3f3;
+    border: 1px solid #b6b6b6;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.04);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 97%;
+    letter-spacing: -0.01em;
+    color: #333;
+
+    &-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #333;
+    }
+
+    &-text {
+      font-weight: 400;
+    }
+
+    &:hover {
+      background: #d5b26a;
+      border-color: #d5b26a;
+      color: #ffffff;
+
+      .ngsp-timeline__card-title,
+      .ngsp-timeline__card-text {
+        color: #ffffff;
+      }
+    }
+  }
+
+  /* Скрыть горизонтальный скролл в WebKit, но оставить функциональность */
+  &__viewport::-webkit-scrollbar {
+    height: 6px;
+  }
+  &__viewport::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &__viewport::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: #d1c3b4;
+  }
+
+  /* Адаптив */
+  @media (max-width: 768px) {
+
+    &__axis {
+      left: 24px;
+      right: 24px;
+    }
+  }
+}

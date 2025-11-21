@@ -11,14 +11,14 @@
 	font-weight: 400;
 }
 @font-face {
-	font-family: "Involve";
-	font-display: swap;
-	src: url("../fonts/Involve-SemiBold.woff2") format("woff2"), url("../fonts/Involve-SemiBold.woff") format("woff"), url("../fonts/Involve-SemiBold.ttf") format("ttf");
-	font-weight: 600;
-}
-@font-face {
 	font-family: "Astra";
 	font-display: swap;
 	src: url("../fonts/Astra-Serif.woff2") format("woff2"), url("../fonts/Astra-Serif.woff") format("woff"), url("../fonts/Astra-Serif.ttf") format("ttf");
 	font-weight: 400;
+}
+@font-face {
+	font-family: "Involve";
+	font-display: swap;
+	src: url("../fonts/Involve-SemiBold.woff2") format("woff2"), url("../fonts/Involve-SemiBold.woff") format("woff"), url("../fonts/Involve-SemiBold.ttf") format("ttf");
+	font-weight: 600;
 }
